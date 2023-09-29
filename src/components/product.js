@@ -35,7 +35,7 @@ const ProductComponent = ({ product }) => {
   }, [product.StartTime]);
 
   return (
-    <div className="m-3 bg-gray-200  text-blue-600 p-3 inline-block">
+    <div className="m-3 bg-gray-200 w-1/4    text-blue-600 p-3 inline-block">
       <h1>Ürün Adı: {product.Name}</h1>
       <p>Ürün Açıklaması: {product.Description}</p>
       {timeRemaining ? (
@@ -48,7 +48,7 @@ const ProductComponent = ({ product }) => {
       )}
       {timeRemaining == null && product.EndTime === null && (
         <Link
-          className="p-3 bg-green-500 m-3 inline-block rounded-md text-white"
+          className="p-3 bg-blue-600 m-3 inline-block rounded-md text-white"
           href={`/products/${product.ProductID}`}
         >
           Ürüne git
